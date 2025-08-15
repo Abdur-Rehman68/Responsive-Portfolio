@@ -1,6 +1,5 @@
 const toggleBtn = document.getElementById('theme-toggle');
 
-// Set initial label based on current theme
 function updateButtonLabel() {
     const isDark = document.body.dataset.theme === 'dark';
     toggleBtn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
@@ -12,7 +11,6 @@ toggleBtn.addEventListener('click', () => {
     updateButtonLabel();
 });
 
-// Run once on page load
 updateButtonLabel();
 
 document.getElementById('contact-form').addEventListener('submit', e => {
